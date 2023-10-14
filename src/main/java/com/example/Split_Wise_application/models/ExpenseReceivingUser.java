@@ -14,7 +14,7 @@ import javax.persistence.Table;
 @Builder
 @Data
 @Entity
-@Table(name = "splitwise_expenses_receiving_users")
+@Table(name = "receiving_users")
 public class ExpenseReceivingUser extends BaseModel{
 
     private double amount;

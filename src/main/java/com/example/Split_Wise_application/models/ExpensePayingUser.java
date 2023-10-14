@@ -7,7 +7,6 @@ import lombok.NoArgsConstructor;
 
 import javax.persistence.Entity;
 import javax.persistence.ManyToOne;
-import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
 @NoArgsConstructor
@@ -15,7 +14,7 @@ import javax.persistence.Table;
 @Builder
 @Data
 @Entity
-@Table(name = "splitwise_expenses_paying_users")
+@Table(name = "paying_users")
 public class ExpensePayingUser extends BaseModel{
 
     private double amount;
@@ -25,6 +24,4 @@ public class ExpensePayingUser extends BaseModel{
 
     @ManyToOne
     private Expense expense;
-
-
 }

@@ -28,8 +28,8 @@ public class Expense extends BaseModel{
     private Currency currency;
 
     @OneToMany
-    List<ExpenseReceivingUser> receivingUsers;
+    private List<ExpenseReceivingUser> receivingUsers;
 
     @OneToMany
-    List<ExpensePayingUser> payingUsers;
+    private List<ExpensePayingUser> payingUsers;
 }
