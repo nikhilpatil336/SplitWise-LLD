@@ -21,28 +21,15 @@ public class Expense extends BaseModel{
 
     private String description;
 
-//    @ManyToOne
-//    private User createdBy;
-
     @ManyToMany
     private List<User> participents;
 
     @OneToOne
     private Currency currency;
 
-    @ManyToOne
-    @JoinColumn(name = "group_id")
-    private Group group;
+    @OneToMany
+    List<ExpenseReceivingUser> receivingUsers;
 
-    @ElementCollection
-    @CollectionTable(name = "payer", joinColumns = @JoinColumn(name = "user_id"))
-    @MapKeyClass(User.class)
-    @Column(name = "amount")
-    private Map<User, Double> payer;
-
-    @ElementCollection
-    @CollectionTable(name = "receiver", joinColumns = @JoinColumn(name = "user_id"))
-    @MapKeyClass(User.class)
-    @Column(name = "amount")
-    private Map<User, Double> Receiver;
+    @OneToMany
+    List<ExpensePayingUser> payingUsers;
 }

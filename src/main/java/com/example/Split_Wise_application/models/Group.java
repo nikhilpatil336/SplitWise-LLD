@@ -18,15 +18,12 @@ public class Group extends BaseModel{
 
     private String name;
 
-//    @ManyToOne
-//    private User createdBy;
-
     @ManyToMany
     private List<User> admins;
 
     @ManyToMany
     private List<User> members;
 
-    @OneToMany(mappedBy = "group", cascade = CascadeType.ALL)
+    @OneToMany
     private List<Expense> expenses;
 }
