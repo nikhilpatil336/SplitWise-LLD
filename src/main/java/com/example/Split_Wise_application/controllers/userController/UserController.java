@@ -1,6 +1,6 @@
 package com.example.Split_Wise_application.controllers.userController;
 
-import com.example.Split_Wise_application.Services.UserService;
+import com.example.Split_Wise_application.services.userservice.UserService;
 import com.example.Split_Wise_application.controllers.userController.RequestDTO.CreateUserRequestDTO;
 import com.example.Split_Wise_application.controllers.userController.RequestDTO.UpdateUserRequestDTO;
 import com.example.Split_Wise_application.controllers.userController.ResponseDTO.CreateUserResponseDTO;

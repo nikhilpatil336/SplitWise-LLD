@@ -1,4 +1,4 @@
-package com.example.Split_Wise_application.Services;
+package com.example.Split_Wise_application.services.userservice;
 
 import com.example.Split_Wise_application.models.User;
 

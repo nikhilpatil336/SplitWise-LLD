@@ -1,4 +1,4 @@
-package com.example.Split_Wise_application.Config;
+package com.example.Split_Wise_application.config;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;

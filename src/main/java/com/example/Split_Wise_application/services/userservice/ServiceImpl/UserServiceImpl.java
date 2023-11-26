@@ -1,8 +1,8 @@
-package com.example.Split_Wise_application.Services.ServiceImpl;
+package com.example.Split_Wise_application.services.userservice.ServiceImpl;
 
 import com.example.Split_Wise_application.models.User;
 import com.example.Split_Wise_application.repositories.UserRepository;
-import com.example.Split_Wise_application.Services.UserService;
+import com.example.Split_Wise_application.services.userservice.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
